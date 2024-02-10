@@ -75,6 +75,9 @@ body {
         text-align: center;
         margin-top: 60px;
     }
+    .contact-elements a img{
+        width: 20vh;
+    }
 }
 
 .contact-elements h1 {
