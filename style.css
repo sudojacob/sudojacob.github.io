@@ -82,8 +82,8 @@ body {
     }
     .contact-elements a {
         margin: 1vh !important;
-        height: 100px;
-        width: 100px;
+        height: 100px !important;
+        width: 100px !important;
     }
     .contact-elements a img{
         height: 100px !important;
