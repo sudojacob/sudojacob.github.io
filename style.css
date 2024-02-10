@@ -70,13 +70,29 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         -ms-flex-direction: column;
         -webkit-flex-direction: column;
         text-align: center;
         margin-top: 60px;
     }
+    .contact-elements h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    .contact-elements a {
+        margin: 1vh !important;
+        height: 100px;
+        width: 100px;
+    }
     .contact-elements a img{
-        width: 20vh;
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    .contact-elements a img:hover {
+        background-color: #9CA39B;
+        border-radius: 20px !important;
     }
 }
 
