@@ -1,7 +1,8 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
     background-color: #9CA39B;
     margin: 0;
     font-family: 'Roboto Flex';
@@ -35,7 +36,8 @@ body {
 }
 
 .background-rec {
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     margin: 0px;
     background-color: #8d9489;;
@@ -50,8 +52,11 @@ body {
 
 .backdrop {
     background-color: antiquewhite;
-    width: 90%;
-    height: 90%;
+    margin: 30px;
+    padding-right: 20px;
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
     border-radius: 50px;
     opacity: 0.6;
     display: flex;
