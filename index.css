@@ -19,19 +19,22 @@
 
 }
 
-.introDiv h1 {
+.introDiv .hello {
     width: 40%;
     font-size: 40px;
     font-size: calc(2rem + 3vw);
     border-radius: 20%;
+    display: flex;
     justify-content: center;
     text-align: center;
     height: auto;
+    align-items: center;
+
 
 }
 @media only screen and (min-width: 1000px) {
-    .introDiv h1 {
-        font-size: 50px !important;
+    .introDiv .hello {
+        font-size: 60px !important;
     }
 
 }
@@ -47,6 +50,22 @@
 .bio {
     font-size: 30px;
 }
-@media only screen and (max-width: 650px) {
-
+@media only screen and (max-width: 550px) {
+    .introDiv {
+        flex-direction: column;
+        align-items: center;
+        height: auto !important;
+    }
+    .hello {
+        width: 100% !important;
+    }
+    #portrait {
+        width: 160px;
+        height: 160px;
+        border-radius: 90px;
+    }
+    .bio {
+        font-size: 27px !important;
+    ;
+    }
 }

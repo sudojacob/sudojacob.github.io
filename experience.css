@@ -32,6 +32,10 @@
     margin-top: 20px;
 }
 
+li {
+    text-align: left;
+}
+
 @media only screen and (max-width: 650px) {
     .row-div div {
         margin-top: 20px !important;
