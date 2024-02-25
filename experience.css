@@ -9,10 +9,12 @@
     margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    flex-wrap: wrap;
 }
 
 .row-div div {
     background-color: #e7d8c6;
+    min-width: 250px;
     margin: auto;
     max-width: 40%;
     padding: 8px;
@@ -26,4 +28,28 @@
 .coursework div {
     max-width: 150px;
     height: 150px;
+    margin-top: 20px;
 }
+
+@media only screen and (max-width: 650px) {
+    .row-div div {
+        margin-top: 20px !important;
+    }
+    .coursework div {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
