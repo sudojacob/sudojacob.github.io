@@ -1,0 +1,52 @@
+.bioDiv {
+    width: 70vw;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introDiv {
+    margin-top: 20px;
+    width: inherit;
+    height: 30vw;
+    max-height: 250px;
+    max-width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.introDiv h1 {
+    width: 40%;
+    font-size: 40px;
+    font-size: calc(2rem + 3vw);
+    border-radius: 20%;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+
+}
+@media only screen and (min-width: 1000px) {
+    .introDiv h1 {
+        font-size: 50px !important;
+    }
+
+}
+
+#portrait {
+    border-radius: 15vw;
+    max-width: 250px;
+    max-height: 250px;
+    border: 10px solid #70756d;
+    margin: 3%;
+}
+
+.bio {
+    font-size: 30px;
+}
+@media only screen and (max-width: 650px) {
+
+}
