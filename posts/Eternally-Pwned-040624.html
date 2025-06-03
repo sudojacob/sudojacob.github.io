@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternally Pwned: Exfiltration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <article class="post">
+            <header class="post-header">
+                <h1 class="post-title typewriter-effect">WolvCTF - Eternally Pwned: Exfiltration</h1>
+                <p class="post-meta">Posted on <time datetime="2024-06-04">April 6, 2024</time></p>
+            </header>
+            <div class="post-content">
+                <figure>
+                    <img
+                            src="Eternally-Pwned-040624-files/Screenshot%20from%202024-03-24%2022-56-23.png"
+                            alt="Screenshot from 2024-03-24 22-56-23.png" />
+                </figure>
+                <h5
+                        id="the-attached-file-is-a-.pcap-so-we-can-analyze-it-using-wireshark.">The
+                    attached file is a .pcap, so we can analyze it using wireshark.</h5>
+                <figure>
+                    <img
+                            src="Eternally-Pwned-040624-files/Pasted%20image%2020240405223449.png?raw=true"
+                            alt="image" />
+                </figure>
+                <h5
+                        id="to-get-a-nice-summary-of-the-traffic-we-look-at-statistics-protocol-hierarchy">To
+                    get a nice summary of the traffic we look at
+                    <code>Statistics &gt; Protocol Hierarchy</code></h5>
+                <p><img
+                        src="Eternally-Pwned-040624-files/Pasted%20image%2020240405223636.png?raw=true"
+                        alt="image" /> <img
+                        src="Eternally-Pwned-040624-files/Pasted%20image%2020240405224247.png?raw=true"
+                        alt="image" /></p>
+                <h5 id="hmm-file-sharing.-could-find-some-secrets-there">Hmm… file
+                    sharing. Could find some secrets there!</h5>
+                <h5 id="well-filter-for-only-smb-traffic.">We’ll filter for only smb
+                    traffic.</h5>
+                <figure>
+                    <img
+                            src="Eternally-Pwned-040624-files/Pasted%20image%2020240405224359.png?raw=true"
+                            alt="image" />
+                </figure>
+                <h5 id="thats-a-much-more-managable-number-of-packets.">That’s a much
+                    more managable number of packets.</h5>
+                <h5
+                        id="clicking-through-each-packet-we-see-an-interesting-base64-looking-string.">Clicking
+                    through each packet we see an interesting base64 looking string.</h5>
+                <figure>
+                    <img
+                            src="Eternally-Pwned-040624-files/Screenshot%20from%202024-04-05%2022-48-33.png?raw=true"
+                            alt="image" />
+                </figure>
+                <h5 id="decoding-this-we-get-the-following-wctfl3ts_">Decoding this we
+                    get the following: <code>wctf{l3tS_</code></h5>
+                <h5
+                        id="definitely-seems-promising-now-to-find-the-rest-of-it">Definitely
+                    seems promising! Now to find the rest of it…</h5>
+                <h5
+                        id="we-can-click-on-that-packet-and-follow-the-tcp-stream-to-find-more.">We
+                    can click on that packet and follow the TCP stream to find more.</h5>
+                <p><img
+                        src="Eternally-Pwned-040624-files/Pasted%20image%2020240405230325.png?raw=true"
+                        alt="image" /> <img
+                        src="Eternally-Pwned-040624-files/Pasted%20image%2020240405230036.png?raw=true"
+                        alt="image" /></p>
+                <h5
+                        id="by-scrolling-through-the-stream-we-can-find-two-more-pieces-of-base64.">By
+                    scrolling through the stream we can find two more pieces of base64.</h5>
+                <h5
+                        id="decoding-these-we-get-3tern4lly_g0_-and-blu3_7n9wm4iwnl">Decoding
+                    these we get <code>3teRn4lLy_g0_</code> and
+                    <code>bLU3_7n9wm4iWnL}</code></h5>
+                <h5 id="we-can-combine-these-parts-to-get-the-full-flag">We can combine
+                    these parts to get the full flag:</h5>
+                <h5
+                        id="wctfl3ts_3tern4lly_g0_blu3_7n9wm4iwnl"><code>wctf{l3tS_3teRn4lLy_g0_bLU3_7n9wm4iWnL}</code></h5>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p><a href="../index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>
